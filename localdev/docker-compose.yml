@@ -1,10 +1,8 @@
-version: "3.6"
+version: "3.9"
 
 services:
   ftp:
     image: lovelysystems/docker-proftpd:dev
-    hostname: localhost
-    network_mode: bridge
     environment:
       TZ: "Europe/Vienna"
     volumes:
@@ -13,6 +11,6 @@ services:
     - ./proftpd.passwd:/run/secrets/proftpd.passwd
     - ./volumes/data:/data
     ports:
-    - "21:21"
+    - "2121:21"
     # only open up 100 ports for testing, since on osx the mapping is slow
     - "49000-49100:49000-49100"
