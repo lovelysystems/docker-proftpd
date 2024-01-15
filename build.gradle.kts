@@ -1,12 +1,11 @@
 plugins {
-    id("com.lovelysystems.gradle") version ("1.1.0")
+    id("com.lovelysystems.gradle") version ("1.11.5")
 }
 
 lovely {
     gitProject()
-    dockerProject("lovelysystems/docker-proftpd")
-    with(dockerFiles) {
-        from("docker") 
+    dockerProject("lovelysystems/docker-proftpd") {
+        from("docker")
     }
 }
 
