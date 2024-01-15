@@ -5,7 +5,12 @@ adheres to Semantic Versioning.
 
 ## Unreleased
 
+### Feature
+
+- Update base image to Alpine 3.19
+- Update to ProFTPD 1.3.8b-r0
+
 ### Chore
 
 - Update Gradle wrapper to 8.5
-- Update lovely-gradle-plugin to 1.11.5
+- Update lovely-gradle-plugin to 1.12.0
