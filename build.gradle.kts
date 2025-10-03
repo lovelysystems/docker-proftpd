@@ -4,7 +4,7 @@ plugins {
 
 lovely {
     gitProject()
-    dockerProject("lovelysystems/docker-proftpd") {
+    dockerProject("ghcr.io/lovelysystems/docker-proftpd") {
         from("docker")
     }
 }
